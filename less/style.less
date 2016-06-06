@@ -1,119 +1,40 @@
-@import url(//fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+// Core variables and mixins, fonts defined
+@import "fonts.less";
+@import "variables.less";
+@import "mixins.less";
+@import "animate.less";
+@import "tweak.less";
+@import "node_modules/swiper/src/less/swiper.less";
 
-body {
-	font-family: roboto;
-	font-size: 14px;
-	line-height: 1.42857143;
-	color: #000;
-	background-color: #EEEEEE;
-	font-weight: 400;
-	padding-top: 65px;
-}
+/* Theme Name:The Project - Responsive Website Template
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Author e-mail:htmlcoder.me@gmail.com
+Version:1.2.0
+Created:March 2015
+License URI:http://support.wrapbootstrap.com/
+File Description:Main CSS file of the template */
 
-*, button, input, i, a {
-	-webkit-font-smoothing: antialiased;
-}
+/* TABLE OF CONTENTS
+1) Typography
+2) Layout
+3) Sections
+4) Pages ( blog, about etc )
+5) Components
+6) Navigations
+7) Blocks/Widgets
+8) Main Slideshow
+9) Owl carousel
+10) Full Page
+* */
 
-*, :active, :hover {
-	outline: 0 !important;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-}
-
-p {
-	margin-bottom: 20px;
-}
-
-small {
-	font-size: 11px;
-}
-
-h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small {
-	font-size: 12px;
-}
-
-ul, li {
-	list-style: none;
-}
-
-#main {
-	position: relative;
-}
-
-#toggle-width {
-	margin-left: 50px;
-	margin-bottom: 5px;
-}
-
-#content {
-	-webkit-transition: opacity 150ms linear;
-	-moz-transition: opacity 150ms linear;
-	-ms-transition: opacity 150ms linear;
-	-o-transition: opacity 150ms linear;
-	transition: opacity 150ms linear;
-
-	&.ajaxifying {
-		-moz-opacity: 0;
-		opacity: 0;
-		-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	}
-}
-
-a:hover, a:active, a:focus, a:visited {
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.container.footer {
-	text-align: center;
-	font-size: 14px;
-}
-
-@media (min-width: @screen-sm-min) {
-	body #content {
-		padding: 15px 0px;
-	}
-}
-
-@media (max-width: @screen-xs-max) {
-	body #content {
-		padding: 15px 5px;
-	}
-}
-
-@media (min-width: @screen-lg-min) {
-	body.sw-toggled #content {
-		padding: 30px 0px 30px 150px;
-	}
-}
-
-@media (min-width: @screen-lg-min) {
-	body.sw-toggled #content>.container {
-		width: ~"calc(100% - 30px)";
-	}
-}
-
-.status {
-	&.online {
-		background-color: @material-success;
-		color: @material-success;
-	}
-
-	&.away {
-		background-color: @material-warning;
-		color: @material-warning;
-	}
-
-	&.dnd {
-		background-color: @material-danger;
-		color: @material-danger;
-	}
-
-	&.offline {
-		background-color: #777;
-		color: #777;
-	}
-}
-
-.bootbox {
-	z-index: 100001;
-}
+@import "1_typography.less";
+@import "2_layout.less";
+@import "3_sections.less";
+@import "4_pages.less";
+@import "5_components.less";
+@import "6_navigations.less";
+@import "7_blocks-widgets.less";
+@import "8_main-slideshow.less";
+@import "9_owl-carousel.less";
+@import "10_full-page.less";

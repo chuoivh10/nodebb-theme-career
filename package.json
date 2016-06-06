@@ -1,27 +1,30 @@
 {
-  "name": "nodebb-theme-material",
-  "version": "2.6.18",
+  "name": "nodebb-theme-career",
+  "version": "1.0.0",
   "nbbpm": {
     "compatibility": "^1.0.0"
   },
-  "description": "Material Design theme for NodeBB",
+  "description": "Career Design theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pichalite/nodebb-theme-material"
+    "url": "https://github.com/chuoivh10/nodebb-theme-career"
   },
   "keywords": [
     "nodebb",
-    "material",
-    "material design",
+    "career site",
+    "career site design",
     "theme",
     "themes"
   ],
+  "dependencies":{
+      "swiper": "latest"
+  },
   "author": {
-    "name": "pichalite",
-    "email": "pichalite.com@gmail.com"
+    "name": "chuoivh10",
+    "email": "vanhiep.ap@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/pichalite/nodebb-theme-material/issues"
+    "url": "https://github.com/chuoivh10/nodebb-theme-career/issues"
   }
 }

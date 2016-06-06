@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-material",
+	"id": "nodebb-theme-career",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{
@@ -13,8 +13,7 @@
 		}
 	],
 	"scripts": [
-		"lib/material.js",
-		"lib/vendor/waves.min.js"
+		"lib/career.js"
 	],
 	"templates": "./templates"
 }

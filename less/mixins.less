@@ -1,22 +1,20 @@
-.no-select {
-	.user-select(none);
-}
+// Mixins
+// --------------------------------------------------
 
-.pointer {
-	cursor: pointer;
-	*cursor: hand;
-}
+// Utilities
+@import "mixins/hide-text.less";
+@import "mixins/opacity.less";
+@import "mixins/functions.less";
 
-.inline-block {
-	display: inline-block;
-	*display: inline;
-	zoom: 1;
-}
+@import "mixins/size.less";
+@import "mixins/vendor-prefixes.less";
 
-.border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	-ms-border-radius: @radius;
-	-o-border-radius: @radius;
-	border-radius: @radius;
-}
+// Components
+@import "mixins/buttons.less";
+
+// Skins
+@import "mixins/gradients.less";
+
+// Layout
+@import "mixins/clearfix.less";
+@import "mixins/center-block.less";
